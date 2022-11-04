@@ -33,27 +33,6 @@ add_action( 'wp_enqueue_scripts','team_toolkit_include_files');
 // If your string has a custom filter, add its tag name in an applicable add_filter function
 add_filter( 'widget_text', 'do_shortcode' ); //For WP old version
 
-/*
- * Set Page templates for CPT "your_cpt"
- */
-
-
-
-function team_member_archive_single_post( $template ) {
-
-    $post_type = 'team-member'; // Change this to the name of your custom post type!
-
-    if ( is_post_type_archive( $post_type ) && file_exists( plugin_dir_path(__DIR__) . "shortcodes/archive-$post_type.php" ) ){
-        $template = plugin_dir_path(__DIR__) . "shortcodes/archive-$post_type.php";
-    }
-
-    if ( is_singular( $post_type ) && file_exists( plugin_dir_path(__DIR__) . "shortcodes/single-$post_type.php" ) ){
-        $template = plugin_dir_path(__DIR__) . "shortcodes/single-$post_type.php";
-    }
-
-    return $template;
-}
-add_filter( 'template_include', 'team_member_archive_single_post' );
 /**
  * Implement Find me Addons.
  */

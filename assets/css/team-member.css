@@ -60,11 +60,9 @@
     color: #fff;
     text-transform: uppercase;
 }
-.see-all-member a:hover {
-    padding: 12px 50px;
+.see-all-member a:hover {    
     background: #5351FB;
-    color: #fff;
-    text-transform: uppercase;
+    color: #fff !important;    
 }
 
 /*----------------------
