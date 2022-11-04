@@ -13,6 +13,7 @@ function team_member_custom_post()
         'public' => true,
         'menu_icon' => 'dashicons-admin-comments',
         'show_ui' => true,
+        'has_archive' => true,
         'supports' => array(
             'title',
             'editor',

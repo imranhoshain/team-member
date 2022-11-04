@@ -10,10 +10,62 @@
 [ End table content ]
 ======================================*/
 
+.single-team {
+    width: 30%;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
 
+.team-image-left {
+    width: 30%;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: left;
+}
 
+.team-image-left .image-box-wrapper {
+    width: 25%;
+    display: inline-block;
+    margin-right: 15px;
+}
+.team-image-left figure.team-img.image-box-img {float: left;display: block;}
 
+.team-image-left .team-detail.image-box-content {
+    float: right;
+    width: 70%;
+}
 
+.team-detail h4.team-member-name {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.team-detail p.team-member-position {
+    margin: 10px 0 0 0;
+}
+
+.team-image-left .team-detail h4.team-member-name {
+    margin: 0;
+}
+
+.see-all-member {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.see-all-member a {
+    padding: 12px 50px;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+}
+.see-all-member a:hover {
+    padding: 12px 50px;
+    background: #5351FB;
+    color: #fff;
+    text-transform: uppercase;
+}
 
 /*----------------------
 # Responsive css
